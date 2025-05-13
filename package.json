@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ayhan-karaman.dev",
+  "homepage": "https://ayhan-karaman.dev/my-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
