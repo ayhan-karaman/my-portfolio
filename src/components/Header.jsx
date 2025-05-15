@@ -10,27 +10,27 @@ const navMenuItems = [
         child: <BsHouse className='icon' />
     },
     // {
-    //     href: "about",
+    //     href: "#about",
     //     title: "Hakkımda",
     //     child: <BsPerson className='icon' />
     // },
     // {
-    //     href: "resume",
+    //     href: "#resume",
     //     title: "Özgeçmiş",
     //     child: <BsFileEarmarkText className='icon' />
     // },
     // {
-    //     href: "portfolio",
+    //     href: "#portfolio",
     //     title: "Portföy",
     //     child: <BsImages className='icon' />
     // },
     // {
-    //     href: "services",
+    //     href: "#services",
     //     title: "Hizmetler",
     //     child: <BsHddStack className='icon' />
     // },
     // {
-    //     href: "contact",
+    //     href: "#contact",
     //     title: "İletişim",
     //     child: <BsEnvelope className='icon' />
     // },
@@ -74,7 +74,7 @@ const Header = () => {
                                             closeNavOnSamePageLinks()
                                             handleToggle(e)
                                         }}
-                                        className={`${isActive.includes(x.href) ? 'active' : ''}`} href={`#${x.href}`}
+                                        className={`${isActive.includes(x.href) ? 'active' : ''}`} href={`${x.href}`}
                                     >
                                         {x.child}
                                         <span>{x.title}</span>
