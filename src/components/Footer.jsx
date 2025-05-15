@@ -8,12 +8,14 @@ const Footer = () => {
                     <h3 class="sitename">Ayhan Karaman</h3>
                     <p></p>
                     <div class="social-links d-flex justify-content-center">
-                        <a href=""><i> <BsTwitterX /></i></a>
-                        <a href=""><i><BsFacebook /></i></a>
-                        <a href=""><i> <BsInstagram /></i></a>
-                        {/* <a href=""><i> <BsSkype /></i></a> */}
-                        <a href=""><i><BsLinkedin /></i></a>
-                        <a href=""><i><BsGithub /></i></a>
+                        {/*
+                            <a href=""><i> <BsTwitterX /></i></a>
+                            <a href=""><i><BsFacebook /></i></a>
+                            <a href=""><i> <BsInstagram /></i></a>
+                            <a href=""><i> <BsSkype /></i></a> 
+                            <a href=""><i><BsLinkedin /></i></a>
+                        */}
+                        <a target='_blank' href="https://github.com/ayhan-karaman"><i><BsGithub /></i></a>
                     </div>
                     <div class="container">
                         <div class="copyright">

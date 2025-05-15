@@ -5,15 +5,15 @@ import { BsPerson, BsHouse, BsImages, BsFileEarmarkText, BsHddStack, BsEnvelope,
 
 const navMenuItems = [
     {
-        href: "hero",
+        href: "",
         title: "Anasayfa",
         child: <BsHouse className='icon' />
     },
-    {
-        href: "about",
-        title: "Hakkımda",
-        child: <BsPerson className='icon' />
-    },
+    // {
+    //     href: "about",
+    //     title: "Hakkımda",
+    //     child: <BsPerson className='icon' />
+    // },
     // {
     //     href: "resume",
     //     title: "Özgeçmiş",
@@ -29,11 +29,11 @@ const navMenuItems = [
     //     title: "Hizmetler",
     //     child: <BsHddStack className='icon' />
     // },
-    {
-        href: "contact",
-        title: "İletişim",
-        child: <BsEnvelope className='icon' />
-    },
+    // {
+    //     href: "contact",
+    //     title: "İletişim",
+    //     child: <BsEnvelope className='icon' />
+    // },
 ]
 
 

@@ -31,16 +31,18 @@ function App() {
         <Header />
         <main className="main">
           <Hero />
-          <About />
-          {/* <Stats />
-          <Skills />
-          <Resume />
-          <Portfolio />
-          <Services />
-          <Testimonials /> */}
-          <Contact />
+          {/*
+            <About />
+            <Stats />
+            <Skills />
+            <Resume />
+            <Portfolio />
+            <Services />
+            <Testimonials /> 
+            <Contact />
+          */}
         </main>
-          <Footer />
+        <Footer />
         <ScrollTop />
       </div>
     </>
