@@ -31,8 +31,8 @@ function App() {
         <Header />
         <main className="main">
           <Hero />
-          {/*
             <About />
+          {/*
             <Stats />
             <Skills />
             <Resume />

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import BgImage from '../assets/images/hero.jpeg'
 import { BsTwitterX, BsFacebook, BsInstagram, BsSkype, BsLinkedin, BsGithub } from "react-icons/bs";
+import { TbWorldCode } from "react-icons/tb";
 import '../styles/hero.css'
 import Typed from 'typed.js';
 
@@ -47,6 +48,7 @@ const Hero = () => {
                   <a href=""><i><BsLinkedin /></i></a>
               */}
               <a target='_blank' href="https://github.com/ayhan-karaman"><i><BsGithub /></i></a>
+               <a href="https://ayhan-karaman.dev"><i><TbWorldCode /></i></a>
             </div>
           </div>
         </div>

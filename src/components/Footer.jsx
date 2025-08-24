@@ -1,4 +1,5 @@
 import { BsTwitterX, BsFacebook, BsInstagram, BsSkype, BsLinkedin, BsGithub } from "react-icons/bs";
+import { TbWorldCode } from "react-icons/tb";
 import '../styles/footer.css'
 const Footer = () => {
     return (
@@ -16,6 +17,7 @@ const Footer = () => {
                             <a href=""><i><BsLinkedin /></i></a>
                         */}
                         <a target='_blank' href="https://github.com/ayhan-karaman"><i><BsGithub /></i></a>
+                        <a  href="https://ayhan-karaman.dev"><i><TbWorldCode /></i></a>
                     </div>
                     <div class="container">
                         <div class="copyright">

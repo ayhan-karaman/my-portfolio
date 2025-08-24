@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import ProfileImage from '../assets/images/picofme.png'
+import ProfileImage from '../assets/images/about-1.png'
 import '../styles/about.css'
 import { BsChevronRight } from "react-icons/bs";
 
@@ -49,8 +49,8 @@ const About = () => {
                             <div className="col-lg-6">
                                 <ul>
                                     <li><BsChevronRight className='icon' /> <strong>Doğum Tarihi:</strong> <span>1988</span></li>
-                                    <li><BsChevronRight className='icon' /> <strong>İnternet sitesi:</strong> <span>www.example.com</span></li>
-                                    <li><BsChevronRight className='icon' /> <strong>E-posta:</strong> <span>email@example.com</span></li>
+                                    <li><BsChevronRight className='icon' /> <strong>İnternet sitesi:</strong> <span>ayhan-karaman.dev</span></li>
+                                    <li disabled ><BsChevronRight className='icon' /> <strong>E-posta:</strong> <span>example@example.com</span></li>
                                     
                                 </ul>
                             </div>
