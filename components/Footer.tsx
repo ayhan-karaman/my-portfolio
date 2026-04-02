@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
 
 
-       <div className="w-full p-6 dark:text-cyan-400 text-[#02136] text-xs max-h-[5px] flex justify-center items-center gap-x-4 ">
+       <div className="w-full p-6 dark:text-cyan-400 text-[#0e2136] text-xs max-h-[5px] flex justify-center items-center gap-x-4 ">
          <p className="text-sm">
           © {new Date().getFullYear()} Ayhan KARAMAN Portfolio
         </p>
