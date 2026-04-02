@@ -168,3 +168,56 @@
     --deg:360deg
    }
 }
+
+
+.animate-neon-right {
+   background: linear-gradient(
+    to right,
+    rgba(0,255,255,0) 0%,
+    rgba(0,255,255,0.2) 20%,
+    rgba(0,255,255,0.6) 50%,
+    rgba(0,255,255,1) 100%
+  );
+
+  filter: drop-shadow(0 0 6px cyan)
+          drop-shadow(0 0 12px cyan);
+   animation: neonMove 3s linear infinite;
+   
+}
+.animate-neon-left {
+   background: linear-gradient(
+    to left,
+    rgba(0,255,255,0) 0%,
+    rgba(0,255,255,0.2) 20%,
+    rgba(0,255,255,0.6) 50%,
+    rgba(0,255,255,1) 100%
+  );
+
+  filter: drop-shadow(0 0 6px cyan)
+          drop-shadow(0 0 12px cyan);
+
+ animation: neonMoveLeft 3s linear infinite;
+}
+
+
+
+
+
+
+
+@keyframes neonMove {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+@keyframes neonMoveLeft {
+  0% {
+    transform: translateX(400%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
