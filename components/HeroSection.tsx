@@ -18,7 +18,7 @@ const HeroSection = () => {
 
           <p className="dark:text-cyan-400 text-[#02136] mt-4 text-xl">Full Stack Developer</p>
 
-          <div className="bg-[#1e293b] text-gray-300 rounded-lg px-4 py-3 mt-6 font-mono text-sm">
+          <div className="bg-[#1e293b] dark:bg-[#143d4e] text-gray-300 rounded-lg px-4 py-3 mt-6 font-mono text-sm">
             {`const greeting = "Merhaba, ben Ayhan Karaman"`};
           </div>
 
