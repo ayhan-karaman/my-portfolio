@@ -1,25 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Link from "next/link";
-import { Menu, MenuSquare, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
-import Image from "next/image";
-import DarkImage from '@/public/logo-dark.png'
-import LightImage from '@/public/logo-light.png'
-import { useTheme } from "next-themes";
 import { ModeToggle } from "./ModeToggle";
 import { MdDeveloperBoard } from "react-icons/md";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const {theme} = useTheme()
+const [open, setOpen] = useState(false);
  
 
 
 
   return (
-    <nav className="bg-mylightcolor text-amber-50 border md:rounded-lg border-[#456882] dark:bg-mydarkcolor shadow-md mx-auto max-w-7xl mt-16 relative">
+    <nav className="bg-mylightcolor text-amber-50 border md:rounded-lg border-[#456882] dark:dark:bg-[#143d4e] shadow-md mx-auto max-w-7xl mt-4 relative">
       <div className="animation-box hidden dark:block rounded-lg"></div>
       <div className="flex justify-between h-16 items-center px-4 sm:px-6 lg:px-8">
 

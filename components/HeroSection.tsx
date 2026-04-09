@@ -22,7 +22,7 @@ const HeroSection = () => {
             {`const greeting = "Merhaba, ben Ayhan Karaman"`};
           </div>
 
-          <p className="text-gray-600 dark:text-gray-300 mt-6 leading-relaxed">
+          <p className=" dark:text-gray-300 mt-6 leading-relaxed">
             Modern teknolojilere kullanarak kullanıcı dostu ve yenilikçi çözümler
             sunan tutkulu bir full stack geliştiriciyim.
             <br />

@@ -35,7 +35,7 @@ export default function RootLayout({
       <body suppressHydrationWarning className="min-h-screen dark:bg-[#0e2136]">
         <ThemeProvider>
           <Navbar />
-          <main className="mt-4 min-h-screen max-w-7xl mx-auto">
+          <main className="mt-8 min-h-screen max-w-7xl mx-auto">
             {children}
           </main>
           <Footer />
