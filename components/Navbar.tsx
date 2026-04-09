@@ -3,38 +3,35 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, MenuSquare, X } from "lucide-react";
-import ModeToggle from "./ModeToggle";
+
 import Image from "next/image";
 import DarkImage from '@/public/logo-dark.png'
 import LightImage from '@/public/logo-light.png'
 import { useTheme } from "next-themes";
+import { ModeToggle } from "./ModeToggle";
+import { MdDeveloperBoard } from "react-icons/md";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false)
   const {theme} = useTheme()
+ 
 
 
-  useEffect(() =>{
-    if(theme === "dark")
-      setDarkMode(false)
-    else
-       setDarkMode(true)
-  }, [theme])
 
   return (
-    <nav className="bg-white border rounded-lg border-[#456882] dark:bg-[#142D4A] shadow-md w-full relative">
-      <div className="animation-box rounded-lg"></div>
-      <div className="w-full flex justify-between h-16 items-center px-4 sm:px-6 lg:px-8">
+    <nav className="bg-mylightcolor text-amber-50 border md:rounded-lg border-[#456882] dark:bg-mydarkcolor shadow-md mx-auto max-w-7xl mt-16 relative">
+      <div className="animation-box hidden dark:block rounded-lg"></div>
+      <div className="flex justify-between h-16 items-center px-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
         <div className="md:flex items-center gap-3 px-2 py-2">
           
-             <button className="hidden md:block" onClick={() => setOpen(!open)}>
-              <Image width={28} height={28} src={darkMode ?  DarkImage : LightImage} alt="" />
+             <button className="hidden md:block text-2xl" onClick={() => setOpen(!open)}>
+              {/* <Image width={28} height={28} src={theme === "dark" ?  DarkImage : LightImage} alt="" /> */}
+              <MdDeveloperBoard />
             </button> 
           
-          <div className="text-gray-700 dark:text-gray-200  font-bold text-xl px-4 py-3">
+          <div className=" dark:text-gray-200  font-bold text-xl px-4 py-3">
             Ayhan Karaman
           </div>
         </div>
@@ -42,16 +39,16 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">
+          <Link href="/" className=" dark:text-gray-200 hover:text-blue-500">
             Anasayfa
           </Link>
-          <Link href="/#" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">
+          <Link href="/#" className=" dark:text-gray-200 hover:text-blue-500">
             Hakkımda
           </Link>
-          <Link href="/#" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">
+          <Link href="/#" className=" dark:text-gray-200 hover:text-blue-500">
             Projeler
           </Link>
-          <Link href="/#" className="text-gray-700 dark:text-gray-200 hover:text-blue-500">
+          <Link href="/#" className=" dark:text-gray-200 hover:text-blue-500">
             İletişim
           </Link>
           {/* Theme Button */}

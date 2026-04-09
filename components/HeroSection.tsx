@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="my-5 dark:bg-[#142d4a]  bg-myprimary relative rounded-lg ">
-      <div className="animation-box rounded-lg"></div> 
+    <section className="my-5 dark:bg-mydarkcolor bg-mylightcolor text-amber-50 relative rounded-lg ">
+      <div className="animation-box dark:block hidden rounded-lg"></div> 
        
-      <div className="flex flex-col-reverse items-center md:flex-row gap-n-4 md:flew-row md:justify-between items-stretch md:items-center ">
+      <div className="flex flex-col-reverse  md:flex-row gap-n-4 md:flew-row md:justify-between items-stretch md:items-center ">
         {/* LEFT */}
-        <div className=" flex-grow py-6 px-6 text-center md:text-left" >
+        <div className="py-6 px-6 text-center md:text-left" >
           <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 leading-tight">
             Merhaba, Ben Ayhan <br /> Karaman
           </h1>

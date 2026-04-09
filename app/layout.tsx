@@ -32,17 +32,15 @@ export default function RootLayout({
       className={`${geist.variable} ${jetBrainsMono.className}`}
       suppressHydrationWarning
     >
-      <body suppressHydrationWarning className="min-h-full dark:bg-[#0e2136]">
+      <body suppressHydrationWarning className="min-h-screen dark:bg-[#0e2136]">
         <ThemeProvider>
-          <main className="flex-1 justify-center flex py-6 w-full">
-            <div className="container">
-                <Navbar />
-                {children}
-                 <Footer /> 
-            </div>
-        </main>
+          <Navbar />
+          <main className="mt-4 min-h-screen max-w-7xl mx-auto">
+            {children}
+          </main>
+          <Footer />
         </ThemeProvider>
-  
+
       </body>
     </html>
   );

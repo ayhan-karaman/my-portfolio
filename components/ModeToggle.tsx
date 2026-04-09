@@ -1,37 +1,39 @@
-"use client";
+"use client"
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
 
-const ModeToggle = () => {
-  const { setTheme, theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    // SSR ile hydration uyuşmazlığını önlemek için
-    return null;
-  }
-
-  const handleChangeTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+export function ModeToggle() {
+  const { setTheme } = useTheme()
 
   return (
-    <Button onClick={handleChangeTheme} variant="outline" size="icon">
-      
-      <Sun className="h-[1.2rem] w-[1.2rem] absolute dark:hidden transition-all duration-500 text-yellow-600" />
-      
-      <Moon className="h-[1.2rem] w-[1.2rem] invisible dark:visible text-slate-900 dark:text-slate-100" />
-    
-      <span className="sr-only">Toggle theme</span>
-    </Button>
-  );
-};
-
-export default ModeToggle;
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button className="bg-mylightcolor border-amber-50 dark:bg-mydarkcolor cursor-pointer" variant="outline" size="icon">
+          <Sun className="h-[1.2rem] w-[1.2rem] scale-100 text-yellow-400 text-shadow-2xs  rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="bg-mylightcolor dark:bg-mydarkcolor text-amber-50 dark:text-white" align="end">
+        <DropdownMenuItem className="" onClick={() => setTheme("light")}>
+          Light
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          Dark
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("system")}>
+          System
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
