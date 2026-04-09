@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="my-5 dark:bg-[#142d4a] bg-white relative rounded-lg ">
+    <section className="my-5 dark:bg-[#142d4a]  bg-myprimary relative rounded-lg ">
       <div className="animation-box rounded-lg"></div> 
        
       <div className="flex flex-col-reverse items-center md:flex-row gap-n-4 md:flew-row md:justify-between items-stretch md:items-center ">
